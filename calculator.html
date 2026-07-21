@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Savings Calculator | JEYAR BRIGHTECH</title>
+    <meta name="description" content="Calculate your estimated solar plant capacity, monthly electricity bill savings, payback period, and government subsidies in Thiruvananthapuram.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M16.24 16.24l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z'/></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-bg-glow"></div>
+
+    <!-- Left Sidebar Rail Navigation -->
+    <aside class="sidebar-rail" id="sidebar-rail">
+        <div class="rail-top">
+            <button class="rail-item sidebar-toggle-btn" id="rail-toggle-btn" title="Toggle Sidebar" aria-label="Toggle Sidebar">
+                <i class="fa-solid fa-bars-staggered"></i>
+                <span class="rail-tooltip">Toggle Sidebar</span>
+            </button>
+            <a href="index.html" class="rail-item" title="Home">
+                <i class="fa-solid fa-house"></i>
+                <span class="rail-tooltip">Home</span>
+            </a>
+            <a href="contact.html" class="rail-item" title="Contact Us">
+                <i class="fa-regular fa-comment"></i>
+                <span class="rail-tooltip">Direct Chat</span>
+            </a>
+        </div>
+
+        <div class="rail-divider"></div>
+
+        <div class="rail-nav">
+            <a href="about.html" class="rail-item" title="About Us">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="rail-tooltip">About Us</span>
+            </a>
+            <a href="specifications.html" class="rail-item" title="Products & Specs">
+                <i class="fa-solid fa-solar-panel"></i>
+                <span class="rail-tooltip">Products & Specs</span>
+            </a>
+            <a href="gallery.html" class="rail-item" title="Installations Gallery">
+                <i class="fa-solid fa-images"></i>
+                <span class="rail-tooltip">Installations</span>
+            </a>
+            <a href="calculator.html" class="rail-item active" title="Savings Calculator">
+                <i class="fa-solid fa-calculator"></i>
+                <span class="rail-tooltip">Calculator</span>
+            </a>
+            <a href="faq.html" class="rail-item" title="Frequently Asked Questions">
+                <i class="fa-solid fa-circle-question"></i>
+                <span class="rail-tooltip">FAQs</span>
+            </a>
+            <a href="contact.html" class="rail-item" title="Contact Us">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="rail-tooltip">Contact</span>
+            </a>
+        </div>
+
+        <div class="rail-bottom">
+            <div class="rail-profile" title="Jeyar Brightech Account">
+                <span class="avatar">JB</span>
+                <span class="rail-tooltip">Jeyar Brightech</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <button class="top-sidebar-btn" id="top-sidebar-btn" aria-label="Open sidebar">
+                    <i class="fa-solid fa-sidebar"></i>
+                    <span>Open sidebar</span>
+                    <i class="fa-solid fa-chevron-down caret"></i>
+                </button>
+                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                    <img src="assets/logo.png" alt="Jeyar Brightech Logo" style="height: 38px; width: auto; border-radius: 50%; box-shadow: var(--shadow-sm);">
+                    <span class="logo-text" style="font-weight: 800; font-size: 1.35rem; letter-spacing: -0.5px; color: var(--text-primary);">Jeyar <span class="highlight" style="color: var(--accent-emerald);">Brightech</span></span>
+                </a>
+            </div>
+            
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="gallery.html" class="nav-link">Installations</a></li>
+                    <li><a href="specifications.html" class="nav-link">Specs &amp; Hardware</a></li>
+                    <li><a href="calculator.html" class="nav-link active">Calculator</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQs</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/917306670442?text=Hi%20Jeyar%20Brightech,%20I%20am%20interested%20in%20your%20solar%20energy%20solutions." target="_blank" class="header-whatsapp-icon" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-header">Get Free Quote</a>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content-layout" style="padding-top: 100px;">
+        <!-- Interactive Solar Savings Calculator Section -->
+        <section class="calculator section" id="calculator">
+            <div class="calc-bg-glow"></div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Savings Estimator</span>
+                    <h2 class="section-title">Calculate Your Solar Potential</h2>
+                    <p class="section-desc">Estimate your custom system size, monthly savings, and payback period within seconds. Adjust the slider to see calculations update in real-time.</p>
+                </div>
+                
+                <div class="calculator-grid">
+                    <!-- Calculator Inputs -->
+                    <div class="calc-input-block card glass-card reveal">
+                        <h3>Input Your Details</h3>
+                        <div class="form-group">
+                            <label for="monthly-bill" id="bill-label">Average Bi-monthly Electricity Bill (INR)</label>
+                            <div class="bill-slider-container">
+                                <span class="slider-val-display" id="bill-display">₹5000</span>
+                                <input type="range" id="monthly-bill" min="1000" max="50000" step="500" value="5000" class="custom-slider">
+                                <div class="slider-labels">
+                                    <span>₹1000</span>
+                                    <span>₹25000</span>
+                                    <span>₹50000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>KSEB Billing Cycle</label>
+                            <div class="billing-cycle-btn-group" id="billing-cycle-group">
+                                <button type="button" class="cycle-btn" data-cycle="monthly"><i class="fa-solid fa-calendar-day"></i> Monthly</button>
+                                <button type="button" class="cycle-btn active" data-cycle="bimonthly"><i class="fa-solid fa-calendar-days"></i> Bi-monthly</button>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="solar-exposure">Rooftop Sunlight Exposure</label>
+                            <select id="solar-exposure" class="custom-select">
+                                <option value="1.0">Optimal (Unshaded / All Day)</option>
+                                <option value="0.85" selected>Partial Shade (Good)</option>
+                                <option value="0.70">High Shade (Needs Assessment)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="calc-tips">
+                            <span class="tip-icon"><i class="fa-solid fa-lightbulb"></i></span>
+                            <p class="tip-text">Jeyar Brightech installations routinely save residential clients up to 90% on their KSEB electricity bills.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Calculator Outputs -->
+                    <div class="calc-result-block card glass-card reveal">
+                        <h3>Your Solar Estimate</h3>
+                        
+                        <div class="results-grid">
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-solar-panel"></i></span>
+                                <div>
+                                    <span class="result-label">Recommended System</span>
+                                    <span class="result-value" id="res-system-size">4.0 kWp</span>
+                                    <span class="result-sub-value" id="res-consumption" style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">(Est. 666 Units / Month)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-sack-dollar"></i></span>
+                                <div>
+                                    <span class="result-label" id="savings-label">Est. Bi-monthly Savings</span>
+                                    <span class="result-value text-emerald" id="res-monthly-savings">₹4250</span>
+                                    <span class="result-sub-value" id="res-bimonthly-savings" style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">(₹2125 / Month)</span>
+                                </div>
+                            </div>
+                            
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-arrows-up-to-line"></i></span>
+                                <div>
+                                    <span class="result-label">Required Roof Space</span>
+                                    <span class="result-value" id="res-roof-space">400 Sq. Ft.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="result-tile">
+                                <span class="result-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+                                <div>
+                                    <span class="result-label">Est. Payback Period</span>
+                                    <span class="result-value" id="res-payback">4.2 Years</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="eco-impact-box">
+                            <h4><i class="fa-solid fa-leaf text-emerald"></i> Environmental Impact</h4>
+                            <div class="eco-stats">
+                                <div>
+                                    <span id="res-trees">60</span>
+                                    <p>Trees Planted Equiv. / Yr</p>
+                                </div>
+                                <div>
+                                    <span id="res-co2">4.8</span>
+                                    <p>Tons CO2 Offset / Yr</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary btn-block" id="lock-quote-btn" style="margin-top: 1.5rem;">
+                            <i class="fa-brands fa-whatsapp"></i> Lock In Quote on WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; margin-bottom: 1rem;">
+                    <img src="assets/logo.png" alt="Jeyar Brightech Logo" style="height: 40px; width: auto; border-radius: 50%;">
+                    <span class="logo-text" style="font-weight: 800; font-size: 1.35rem; color: #ffffff;">Jeyar <span class="highlight" style="color: var(--accent-emerald);">Brightech</span></span>
+                </a>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; max-width: 320px;">MNRE Registered Rooftop Solar Enterprise based in Thiruvananthapuram, Kerala.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links-animated">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Installations</a></li>
+                    <li><a href="specifications.html"><i class="fa-solid fa-chevron-right"></i> Specs & Hardware</a></li>
+                    <li><a href="calculator.html"><i class="fa-solid fa-chevron-right"></i> Calculator</a></li>
+                    <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQs</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-location-dot text-emerald"></i> Thiruvananthapuram, Kerala, India</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;"><i class="fa-solid fa-phone text-emerald"></i> +91 7306670442</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

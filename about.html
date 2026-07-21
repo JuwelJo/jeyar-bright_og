@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | JEYAR BRIGHTECH - Renewable Solar Pioneers</title>
+    <meta name="description" content="Learn about Jeyar Brightech, MNRE-registered solar provider in Thiruvananthapuram led by Mr. Santhosh Kumar J. R. (Ex-GE & Havells Branch Head).">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2310b981'><path d='M12 2v2M12 20v2M4.93 4.93l1.41 1.41M16.24 16.24l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z'/></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-bg-glow"></div>
+
+    <!-- Left Sidebar Rail Navigation -->
+    <aside class="sidebar-rail" id="sidebar-rail">
+        <div class="rail-top">
+            <button class="rail-item sidebar-toggle-btn" id="rail-toggle-btn" title="Toggle Sidebar" aria-label="Toggle Sidebar">
+                <i class="fa-solid fa-bars-staggered"></i>
+                <span class="rail-tooltip">Toggle Sidebar</span>
+            </button>
+            <a href="index.html" class="rail-item" title="Home">
+                <i class="fa-solid fa-house"></i>
+                <span class="rail-tooltip">Home</span>
+            </a>
+            <a href="contact.html" class="rail-item" title="Contact Us">
+                <i class="fa-regular fa-comment"></i>
+                <span class="rail-tooltip">Direct Chat</span>
+            </a>
+        </div>
+
+        <div class="rail-divider"></div>
+
+        <div class="rail-nav">
+            <a href="about.html" class="rail-item active" title="About Us">
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="rail-tooltip">About Us</span>
+            </a>
+            <a href="specifications.html" class="rail-item" title="Products & Specs">
+                <i class="fa-solid fa-solar-panel"></i>
+                <span class="rail-tooltip">Products & Specs</span>
+            </a>
+            <a href="gallery.html" class="rail-item" title="Installations Gallery">
+                <i class="fa-solid fa-images"></i>
+                <span class="rail-tooltip">Installations</span>
+            </a>
+            <a href="calculator.html" class="rail-item" title="Savings Calculator">
+                <i class="fa-solid fa-calculator"></i>
+                <span class="rail-tooltip">Calculator</span>
+            </a>
+            <a href="faq.html" class="rail-item" title="Frequently Asked Questions">
+                <i class="fa-solid fa-circle-question"></i>
+                <span class="rail-tooltip">FAQs</span>
+            </a>
+            <a href="contact.html" class="rail-item" title="Contact Us">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="rail-tooltip">Contact</span>
+            </a>
+        </div>
+
+        <div class="rail-bottom">
+            <div class="rail-profile" title="Jeyar Brightech Account">
+                <span class="avatar">JB</span>
+                <span class="rail-tooltip">Jeyar Brightech</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="header-left">
+                <button class="top-sidebar-btn" id="top-sidebar-btn" aria-label="Open sidebar">
+                    <i class="fa-solid fa-sidebar"></i>
+                    <span>Open sidebar</span>
+                    <i class="fa-solid fa-chevron-down caret"></i>
+                </button>
+                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none;">
+                    <img src="assets/logo.png" alt="Jeyar Brightech Logo" style="height: 38px; width: auto; border-radius: 50%; box-shadow: var(--shadow-sm);">
+                    <span class="logo-text" style="font-weight: 800; font-size: 1.35rem; letter-spacing: -0.5px; color: var(--text-primary);">Jeyar <span class="highlight" style="color: var(--accent-emerald);">Brightech</span></span>
+                </a>
+            </div>
+            
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link active">About Us</a></li>
+                    <li><a href="gallery.html" class="nav-link">Installations</a></li>
+                    <li><a href="specifications.html" class="nav-link">Specs &amp; Hardware</a></li>
+                    <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQs</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/917306670442?text=Hi%20Jeyar%20Brightech,%20I%20am%20interested%20in%20your%20solar%20energy%20solutions." target="_blank" class="header-whatsapp-icon" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-header">Get Free Quote</a>
+                <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content-layout" style="padding-top: 100px;">
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">About JEYAR BRIGHTECH</h2>
+                    <p class="section-desc">Powering homes with clean, affordable solar energy across Thiruvananthapuram.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-info card glass-card reveal">
+                        <div class="about-icon-main"><i class="fa-solid fa-solar-panel"></i></div>
+                        <h3>Our Mission & Story</h3>
+                        <p>Established in January 2026, <strong>JEYAR BRIGHTECH Private Limited</strong> is an MNRE-registered solar enterprise serving residential and commercial properties across Thiruvananthapuram. Backed by a 15-member multi-disciplinary team of skilled engineers, technical experts, and accounts specialists, we have successfully executed close to 50 diverse projects within our first six months—ranging from 3kW residential arrays to a massive 25kW Public Works Department (PWD) venture.</p>
+                        <p>Under the leadership of <strong>Mr. Santhosh Kumar J. R.</strong>, who brings over 30 years of industry experience (including serving as Kerala Branch Head for General Electric and Havells), we ensure seamless end-to-end execution, handling all engineering approvals and utility paperwork for a hassle-free green transition.</p>
+                        <div class="owner-bio">
+                            <div class="owner-avatar">
+                                <img src="assets/santhosh_kumar.jpg" alt="Mr. Santhosh Kumar J. R." style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                            </div>
+                            <div>
+                                <h4 class="owner-name">Mr. Santhosh Kumar J. R.</h4>
+                                <p class="owner-title">Founder & Managing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-values">
+                        <div class="value-card card glass-card reveal">
+                            <div class="value-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                            <div class="value-text">
+                                <h4>Professional Installation</h4>
+                                <p>Our experienced technicians custom design and securely mount your panels to ensure optimal roof durability and efficiency.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-card card glass-card reveal">
+                            <div class="value-icon"><i class="fa-solid fa-file-shield"></i></div>
+                            <div class="value-text">
+                                <h4>Subsidy Assistance</h4>
+                                <p>We take complete charge of government subsidy applications, helping you save up to ₹78,000 on your system cost.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-card card glass-card reveal">
+                            <div class="value-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="value-text">
+                                <h4>After-sales Support</h4>
+                                <p>Jeyar Brightech provides reliable periodic inspection, panel washing, and electrical maintenance audits to ensure long-term performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Coverage Block -->
+                <div class="media-coverage-block card glass-card reveal" style="margin-top: 3rem; padding: 3rem; border-radius: 24px;">
+                    <div class="media-coverage-grid">
+                        <div class="media-content">
+                            <span class="badge-media"><i class="fa-solid fa-newspaper text-amber"></i> Featured in the Press</span>
+                            <h3 class="media-title">A Solar Enterprise in the Making</h3>
+                            <p class="media-desc-p">
+                                JEYAR BRIGHTECH was recently featured in <strong>The New Indian Express</strong>, highlighting our rapid growth as a premium residential solar provider in Thiruvananthapuram. Within just six months of our MNRE registration, we have successfully executed close to 50 diverse projects, establishing our name for reliability, structural safety, and high-performance engineering.
+                            </p>
+                            <p class="media-desc-p">
+                                The feature details our founder Mr. Santhosh Kumar J. R.'s extensive 30-year career in the electrical industry, including leading roles at GE and Havells, and our vision of expanding sustainable energy across Kerala.
+                            </p>
+                        </div>
+                        <div class="media-image-container">
+                            <img src="assets/news_coverage.png" alt="Featured in The New Indian Express - Jeyar Brightech" class="media-clipping">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Showcase Block -->
+                <div class="media-coverage-block card glass-card reveal" style="margin-top: 3rem; padding: 3rem; border-radius: 24px;">
+                    <div class="media-coverage-grid">
+                        <div class="media-content">
+                            <span class="badge-media"><i class="fa-solid fa-circle-play text-emerald"></i> Solar Showcase</span>
+                            <h3 class="media-title">High-Performance Solar in Action</h3>
+                            <p class="media-desc-p">
+                                Watch our high-efficiency solar panel installations operating under real sunlight. Our arrays feature cutting-edge TOPCon bifacial modules designed to capture maximum light from both sides, yielding superior energy output even in cloudy conditions.
+                            </p>
+                        </div>
+                        <div class="media-image-container" style="display: flex; align-items: center; justify-content: center;">
+                            <video src="assets/whatsapp_solar.mp4" controls autoplay loop muted playsinline style="width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: var(--shadow-sm);"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team Section -->
+        <section class="team section bg-alt" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Our Leadership</span>
+                    <h2 class="section-title">The Minds Behind Jeyar Brightech</h2>
+                    <p class="section-desc">Meet our dedicated management and advisory team driving the green energy revolution in Thiruvananthapuram.</p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-card card glass-card reveal">
+                        <div class="team-img-container">
+                            <img src="assets/santhosh_kumar.jpg" alt="Mr. Santhosh Kumar J. R." class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mr. Santhosh Kumar J. R.</h3>
+                            <span class="team-role">Founder & Managing Director</span>
+                            <p>Bringing over 30 years of electrical field expertise (GE & Havells Branch Head), he leads the company's strategic vision and high engineering standards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card card glass-card reveal">
+                        <div class="team-img-container">
+                            <img src="assets/austin_john.png" alt="Mr. E R Austin John" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mr. E R Austin John</h3>
+                            <span class="team-role">Co-Founder & Director</span>
+                            <p>A skilled mechanical engineer leading structural design, mechanical stability calculations, and robust mounting integrations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card card glass-card reveal">
+                        <div class="team-img-container">
+                            <img src="assets/hari_namboodiri.png" alt="Mr. Hari Namboodiri" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mr. Hari Namboodiri</h3>
+                            <span class="team-role">Brand Ambassador</span>
+                            <p>Championing renewable energy adoption and advocating sustainable solar lifestyles across local communities in Kerala.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="team-card card glass-card reveal">
+                        <div class="team-img-container">
+                            <img src="assets/rajesh_kumar.jpg" alt="Mr. Rajesh Kumar" class="team-img">
+                        </div>
+                        <div class="team-info">
+                            <h3>Mr. Rajesh Kumar</h3>
+                            <span class="team-role">Technical Advisor</span>
+                            <p>Directing technical compliance, panel orientation alignment, and quality control systems for top-tier plant output.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; margin-bottom: 1rem;">
+                    <img src="assets/logo.png" alt="Jeyar Brightech Logo" style="height: 40px; width: auto; border-radius: 50%;">
+                    <span class="logo-text" style="font-weight: 800; font-size: 1.35rem; color: #ffffff;">Jeyar <span class="highlight" style="color: var(--accent-emerald);">Brightech</span></span>
+                </a>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6; max-width: 320px;">MNRE Registered Rooftop Solar Enterprise based in Thiruvananthapuram, Kerala.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links-animated">
+                    <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Installations</a></li>
+                    <li><a href="specifications.html"><i class="fa-solid fa-chevron-right"></i> Specs & Hardware</a></li>
+                    <li><a href="calculator.html"><i class="fa-solid fa-chevron-right"></i> Calculator</a></li>
+                    <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQs</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;"><i class="fa-solid fa-location-dot text-emerald"></i> Thiruvananthapuram, Kerala, India</p>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-top: 0.5rem;"><i class="fa-solid fa-phone text-emerald"></i> +91 7306670442</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
