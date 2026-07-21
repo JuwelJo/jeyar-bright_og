@@ -343,16 +343,31 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 /* Logo */
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     font-size: 1.35rem;
     font-weight: 800;
     font-family: 'Plus Jakarta Sans', sans-serif;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.logo-text {
+    white-space: nowrap;
 }
 
 .logo-icon {
@@ -406,7 +421,8 @@ img {
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 0.5rem;
+    flex-shrink: 0;
 }
 
 .theme-toggle {
@@ -3039,20 +3055,66 @@ body.sidebar-closed .header {
 }
 
 @media (max-width: 576px) {
-    .logo-text {
-        font-size: 1.1rem !important;
+    .header-container {
+        padding: 0 0.5rem;
+        gap: 0.35rem;
     }
 
-    .logo img {
-        height: 32px !important;
+    .header-left {
+        gap: 0.35rem;
     }
 
     .top-sidebar-btn {
-        padding: 0.4rem 0.6rem;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        flex-shrink: 0;
     }
 
-    .top-sidebar-btn span {
-        display: none;
+    .top-sidebar-btn span,
+    .top-sidebar-btn .caret {
+        display: none !important;
+    }
+
+    .logo {
+        gap: 0.35rem;
+    }
+
+    .logo img {
+        height: 28px !important;
+        width: 28px !important;
+        flex-shrink: 0;
+    }
+
+    .logo-text {
+        font-size: 0.88rem !important;
+        white-space: nowrap !important;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .header-actions {
+        gap: 0.35rem;
+    }
+
+    .header-whatsapp-icon {
+        width: 34px;
+        height: 34px;
+        font-size: 1rem;
+    }
+
+    .theme-toggle {
+        width: 34px;
+        height: 34px;
+        font-size: 0.95rem;
+    }
+
+    .mobile-menu-toggle {
+        width: 26px;
     }
 
     .hero-title {
